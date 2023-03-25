@@ -5,10 +5,10 @@ import javax.servlet.http.HttpServlet;
 
 @WebServlet("/member/resetmtable")
 public class ResetMTableServlet extends HttpServlet{
-	
-	
-	
-	
-	
+
+
+
+
+
 
 }

@@ -1,7 +1,7 @@
 package edu.kh.community.member.model.vo;
 
 public class Member {
-	
+
 	private int memberNo;
 	private String memberEmail;
 	private String memberPw;
@@ -11,7 +11,7 @@ public class Member {
 	private String profileImage;
 	private String enrollDate;
 	private String secessionFlag;
-	
+
 	public Member() {
 		// TODO Auto-generated constructor stub
 	}
@@ -109,6 +109,6 @@ public class Member {
 				+ ", profileImage=" + profileImage + ", enrollDate=" + enrollDate + ", secessionFlag=" + secessionFlag
 				+ "]";
 	}
-	
-	
+
+
 }
