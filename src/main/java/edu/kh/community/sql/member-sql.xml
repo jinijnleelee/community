@@ -22,4 +22,10 @@
 	<entry key ="insertCertification">
 	INSERT INTO CERTIFICATION VALUES(?,?, SYSDATE)
 	</entry>
+	
+		<entry key ="resetMTable">
+	SELECT MEMBER_EMAIL ,MEMBER_NICK  
+	FROM MEMBER 
+	</entry>
+	
 </properties>

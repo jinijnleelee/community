@@ -58,5 +58,23 @@ public class MemberService {
 
 			return result;
 	}
+	
+	
+	
+	
+
+	/**
+	 * @param memberEmail
+	 * @return
+	 */
+	public Member resetMTable(String memberEmail, String nickName) throws Exception{
+		Connection conn = getConnection();
+
+		Member member = dao.resetMTable(conn, memberEmail,nickName);
+
+		close(conn);
+
+		return member;
+	}
 
 }

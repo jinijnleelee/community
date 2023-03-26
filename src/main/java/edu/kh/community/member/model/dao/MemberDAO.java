@@ -120,4 +120,32 @@ public class MemberDAO {
 		return 0;
 	}
 
+
+
+	public Member resetMTable(Connection conn, String memberEmail, String nickName) throws Exception{
+		Member member = null;
+
+		try {
+			String sql = prop.getProperty("resetMTable");
+
+			stmt =  conn.createStatement();
+
+			rs = stmt.executeQuery(sql);
+
+			if(rs.next()) { // 조회 결과가 있는 경우
+				member = new Member();
+
+				member.setMemberEmail( "memberEmail" );
+				member.setMemberNickname( "nickName" );
+			
+			}
+
+		}finally {
+			close(rs);
+			close(stmt);
+		}
+
+		return member;
+	}
+
 }

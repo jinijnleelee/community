@@ -42,6 +42,26 @@
             	<div id="result1" style="height: 150px;"></div>
 
                 <hr>
+                
+                
+                <h3>회원 목록 조회</h3>
+            
+            	<p>일정 시간 마다 비동기로 회원 목록(회원 번호, 이메일, 닉네임) 조회</p>
+            	
+            	<table id="memberTable" border="1">
+            	<tr>
+            	<td>회원번호</td>
+            	<td>이메일</td>
+            	<td>닉네임</td>
+            	
+            	</tr>
+            	
+            	
+           
+            	</table>
+
+                <hr>
+                
             
             </section>
 
@@ -104,6 +124,7 @@
 	
 	<!--  main.js 연결 -->
 	<script src="resources/js/main_2.js"></script>
+	<script src="resources/js/main_3.js"></script>
 
 </body>
 </html>
